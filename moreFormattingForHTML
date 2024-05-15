@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <header>
+        <h1>The page title</h1>
+    </header> 
+    <nav>
+        I would post links here but I don't have the urls and everything for now
+    </nav>
+    <main>
+        <p>
+            This is now a paragraph
+        </p>
+        <p>
+            This is another paragraph
+        </p>
+        <!--
+            This is a sample comment invisible on the page.
+        -->
+        <h1>A smaple for Heading 1</h1>
+        <h2>A smaple for Heading 2</h2>
+        <h3>A smaple for Heading 3</h3>
+        <h4>A smaple for Heading 4</h4>
+        <h5>A smaple for Heading 5</h5>
+        <h6>A smaple for Heading 6</h6>
+        
+        This is a test of<br> line breaking<br> which is done on a single <br> line in code <br>
+        
+        <hr>
+        Above is a test of the hr block which makes a line. <br>
+
+        <article>
+            This is a sample of he article tag, it is used create a page section 
+            that contains a complete composition of some sort
+            <section>
+                These lines are considered sections, this is section 1
+            </section>
+             <section>
+                These lines are considered sections, this is section 2
+        </article>
+        <aside>
+            This line is for aside content, it is at best tangentially related to the main content.
+        </aside>
+        <div>
+            This is the div tag, non semantic script goes here.
+        </div>
+        <p>
+            Notice how an <span style="font-variant: small-caps">
+            inline element</span> flows right along with the
+            rest of the text.
+            </p> 
+    </main>
+    <footer>
+        This is the footer of the page at the bottom.
+    </footer>
+</body>
+
+
