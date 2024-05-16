@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <form>
+        <input type="submit" value="buttonText"><br>
+        <input type="submit" value="Submit Me!"><br>
+        <button type="submit">buttonText</button><br>
+        <button type="submit">Ship It</button><br>
+        <style>
+        button {
+            border-radius: 15px;
+        }
+        button {
+    box-shadow: 3px 3px 5px grey;
+}
+        
+        </style><br>
+        <input type="textType" name="textName" value="textValue" placeholder="textPrompt"><br>
+        <input type="text" name="company" size="50"><br>
+        <input type="number" name="points" value="100"><br>
+        <input type="range" name="transparency" min="0" max="100" value="100"><br>
+        <input type="email" name="user-email" placeholder="you@yourdomain.com"><br>
+        <input type="url" name="homepage" placeholder="e.g., http://domain.com/"><br>
+        <input type="tel" name="mobile" placeholder="(xxx)xxx-xxxx"><br>
+        <input type="time" name="start-time"><br>
+        <input type="password" name="userpassword" autocomplete="current-password"><br>
+        <input type="search" name="q" placeholder="Type a search term"><br>
+        <input id="userSession" name="user-session" type="hidden" value="jwr274"><br>
+        
+        <textarea name="message" rows="5">
+            Default text goes here.
+            </textarea>
+            <label><br>
+                Email:
+                <input type="email" name="user-email" placeholder="you@yourdomain.com">
+                </label><br>
+                <label for="useremail">Email:</label><br>
+                <input id="useremail" type="email" name="user-email" placeholder="you@yourdomain.com">
+        
+                <fieldset>
+                    <legend>
+                        What's your phobia? (Please check all that apply):
+                    </legend>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Ants">Myrmecophobia (Fear of ants)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Bald">Peladophobia (Fear of becoming bald)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Beards" checked>Pogonophobia (Fear of beards)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Bed">Clinophobia (Fear of going to bed)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Chins" checked>Geniophobia (Fear of chins)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Flowers">Anthophobia (Fear of flowers)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Flying">Aviatophobia (Fear of flying)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Purple">Porphyrophobia (Fear of purple)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Teeth" checked>Odontophobia (Fear of teeth)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Thinking">Phronemophobia (Fear of thinking)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Vegetables">Lachanophobia (Fear of vegetables)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Fear" checked>Phobophobia (Fear of fear)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="phobia" value="Everything">Pantophobia (Fear of everything)
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Select a delivery method
+                    </legend>
+                    <div>
+                        <input type="radio" id="carrier-pigeon" name="delivery" value="pigeon" checked>
+                        <label for="carrier-pigeon">Carrier pigeon</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pony-express" name="delivery" value="pony">
+                        <label for="pony-express">Pony express</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="snail-mail" name="delivery" value="postal">
+                        <label for="snail-mail">Snail mail</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="some-punk" name="delivery" value="bikecourier">
+                        <label for="some-punk">Some punk on a bike</label>
+                    </div>
+                </fieldset>
+                <form>
+                    <div>
+                        <label for="hair-color">Select your hair color:</label><br>
+                        <select id="hair-color" name="hair-color">
+                            <option value="black">Black</option>
+                            <option value="blonde">Blonde</option>
+                            <option value="brunette" selected>Brunette</option>
+                            <option value="red">Red</option>
+                            <option value="neon">Something neon</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="hair-style">Select your hair style:</label><br>
+                        <select id="hair-style" name="hair-style" size="4">
+                            <option value="bouffant">Bouffant</option>
+                            <option value="mohawk">Mohawk</option>
+                            <option value="page-boy">Page Boy</option>
+                            <option value="permed">Permed</option>
+                            <option value="shag">Shag</option>
+                            <option value="straight" selected>Straight</option>
+                            <option value="none">Style? What style?</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="hair-products">Hair products used in the last year:</label><br>
+                        <select id="hair-products" name="hair-products" size="5" multiple>
+                            <option value="gel">Gel</option>
+                            <option value="grecian-formula">Grecian Formula</option>
+                            <option value="mousse">Mousse</option>
+                            <option value="peroxide">Peroxide</option>
+                            <option value="shoe-black">Shoe black</option>
+                        </select>
+                    </div>
+                </form><br>
+                <input type="color" name="bg-color" value="#4f5392"><br>
+                <input type="date" name="appt-date" value="2023-08-23"><br>
+                <input type="file" name="user-photo"><br>
+                <input type="month" name="birthday-month" value="2023-08"><br>
+                <input type="week" name="vacation-week" value="2023-W34"><br>
+    </form>
