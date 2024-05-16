@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    This is a picture of a penguin<br>
+    <img src="pengin.jpeg" alt="pengin" title="no way its a pengin">
+    <figcaption>
+        <b>Figure 1</b>—the penguin is <i>penguining</i>.
+    </figcaption>
+
+    <header>
+        <a href="/"><img src="with drip.jpeg" alt="ayo this pengin got drip"></a>
+        <h1>this penguin got drip?"</h1>
+        <hr>
+    </header>
+
+    <h4>playing around with positions</h4>
+    <div>
+        <img src="images/image01.png" alt="" style="vertical-align: baseline;">Baseline
+    </div>
+    <div>
+        <img src="images/image02.png" alt="" style="vertical-align: bottom">Bottom
+    </div>
+    <div>
+        <img src="images/image03.png" alt="" style="vertical-align: middle">Middle
+    </div>
+    <div>
+        <img src="images/image04.png" alt="" style="vertical-align: top">Top
+    </div>
+    
+    
+
+    
