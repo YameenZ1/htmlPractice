@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+    <style>
+        aside a {
+            color: red;
+            font-style: italic;
+            text-decoration: none;
+        }
+        aside > h4 {
+            color: green;
+            border-top: 3px solid black;
+            border-bottom: 5px double black;
+            padding: 4px 0;
+            text-transform: uppercase;
+        }
+        h2 ~ ul {
+            background: lightpink;
+            border: 5px outset crimson;
+            list-style-type: square;
+            padding: 8px 20px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>food website</title> 
+    </head>
+    <body>
+        <header>
+            <h1>no way its the food website</h1>
+        </header> 
+        <main>
+            <p>
+                steak
+            </p> 
+            <p>
+                chicken nuggets
+            </p> 
+            <p>
+                oreos
+            </p> 
+        </main>
+    </body>
+    <aside>
+        <h4>Links:</h4>
+        <div>
+            <a href="example01.html">The type selector</a><br>
+            <a href="example02.html">The class selector</a><br>
+            <a href="example03.html">The id selector</a>
+        </div>
+    </aside>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        li {
+            display: inline;
+            margin-right: 8px;
+        }
+
+        aside {
+    border: 5px dashed rgb(0, 0, 0);
+    border-top-left-radius: 50px 75px;
+    border-top-right-radius: 100px 50px;
+    border-bottom-right-radius: 75px 100px;
+    border-bottom-left-radius: 50px 25px;
+
+}          
+    
+        nav {
+            margin-top: 8px;
+            padding: 12px;
+            border: 1px solid black;
+        }
+        header {
+    margin-bottom: 8px;
+        }
+        footer {
+    max-height: 200px;
+    max-width: 150px;
+}             
+
+    </style>
+    <ul>
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+        <li>Surprise!</li>
+        <li>Support</li>
+    </ul>
+    <aside>
+        is this in a box
+    </aside>
+    <header>
+        <h1>Sample website</h1>
+        <h3>A sample of a website</h3>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">What's New</a>
+        <a href="#">What's Old</a>
+        <a href="#">What's What</a>
+    </nav>
+
+    <footer>
+        this is at the bottom
+    </footer>
+    
