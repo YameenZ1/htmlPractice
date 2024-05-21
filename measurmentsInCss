@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /*
+        footer {
+            max-height: 200px;
+            max-width: 150px;
+        }
+
+        child {
+            width: 50%;
+        }
+
+        article {
+            font-size: 24px;
+        }
+
+        child {
+            font-size: 0.75em;
+        }
+        */
+
+    </style>
+
+<body>
+    <main>
+        <article>
+            <section>
+                What font size am I?
+            </section>
+        </article>
+    </main>
+</body>
+
+<style>
+    /*
+    article {
+    font-size: 1.5em;
+    }
+    section {
+        font-size: 1.25em;
+    }
+    */
+</style>
+
+<body>
+    <main>
+        <article>
+            <section>
+                What font size am I?
+            </section>
+        </article>
+    </main>
+</body>
+
+<style>
+    article {
+    font-size: 1.5em;
+    width: 600px;
+    }
+    section {
+        font-size: 1.25em;
+        width: 211em;
+    }
+</style>
+
+<article>
+    <section>
+        How wide am I?
+    </section>
+</article>
