@@ -6,6 +6,29 @@
             margin-right: 8px;
         }
 
+        /* This, friends, is a comment. */
+
+        /* Add a red outline to images that have no alt text */
+        img:not(img[alt]) {
+            outline: 3px solid red;
+        }
+        
+        /*==========================*\
+  General styles
+\*==========================*/
+ 
+/*==========================*\
+  Font styles
+\*==========================*/
+ 
+
+/*==========================*\
+  Layout styles
+\*==========================*/
+ 
+        
+
+
         aside {
     border: 5px dashed rgb(0, 0, 0);
     border-top-left-radius: 50px 75px;
