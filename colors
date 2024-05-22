@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #color-wheel {
+    width: 33vw;
+    height: 33vw;
+    background: conic-gradient(
+        from 90deg,
+        hsl(0 100% 50%),
+        hsl(330 100% 50%),
+        hsl(300 100% 50%),
+        hsl(270 100% 50%),
+        hsl(240 100% 50%),
+        hsl(210 100% 50%),
+        hsl(180 100% 50%),
+        hsl(150 100% 50%),
+        hsl(120 100% 50%),
+        hsl(90 100% 50%),
+        hsl(60 100% 50%),
+        hsl(30 100% 50%),
+        hsl(0 100% 50%)
+    );
+    clip-path: circle(50%);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('roboto-regular.woff2') format('woff2')
+;
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('roboto-italic.woff2') format('woff2')
+;
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('roboto-700.woff2') format('woff2')
+;
+}
+body {
+    font-family: Roboto, Tahoma, sans-serif;
+    font-style: italic
+
+
+}
+p {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-style: oblique
+
+}
+
+
+        </style>
+
+        <body>
+            different font than usual
+        </body>
+        <p>
+            this is also different
+        </p>
+
+
