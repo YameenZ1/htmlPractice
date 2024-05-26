@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+    Type a key:
+</div>
+<input id="key-input" type="text">
+<div>
+    Here's the code of the key you pressed:
+</div>
+<div id="key-output">
+</div>
+<script>
+    const keyInput = document.getElementById('key-input');
+keyInput.addEventListener('keypress', function(e) {
+    const keyOutput = document.getElementById('key-output');
+    keyOutput.innerHTML = e.which;
+});
+
+const links = document.getElementsByTagName('a')
+for (const link of links) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        strURL = e.target.href;
+        document.getElementById('output').innerHTML = 'Link URL: ' + strURL;
+    })
+}
+
+// Declare an array of product objects
+const products = [
+    { name: 'doodad', units: 547 },
+    { name: 'gizmo', units: 213 },
+    { name: 'gimcrackery', units: 156 },
+    { name: 'knickknack', units: 844 },
+    { name: 'bric-a-brac', units: 449 },
+    { name: 'thingamajig', units: 71 },
+    { name: 'watchamacallit', units: 313 },
+    { name: 'widget', units: 117 }
+];
+ 
+// Query the array
+const strQuery = "gizmo";
+const stock = products.find((currentProduct) => {
+    return currentProduct.name === strQuery;
+});
+ 
+// Output the result
+if (stock) {
+    console.log("Product " + stock.name + " has " + stock.units + " units in stock.");
+} else {
+    console.log("Product " + strQuery + " not found.");
+}
+
+function numericSort(a, b) {
+    return b - a;
+}
+const myArray = [3, 5, 1, 6, 2, 4];
+let str = "myArray (before sorting): " + myArray + "<br>";
+myArray.sort(numericSort);
+str+= "myArray (after sorting): " + myArray;
+document.getElementById('output').innerHTML = str;
+
+</script>
+
+<a href="https://wiley.com/">Wiley</a><br>
+<a href="https://262.ecma-international.org/6.0/">ECMAScript 2015 Spec</a><br>
+<a href="https://webdev.mcfedries.com/tools/workbench/">WebDev Workbench</a>
+<div id="output">
+    Link URL:
+<div>
