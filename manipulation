@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<pre>
+    Say waasaa wazzaa wazza woop voop Coops Soon
+    01234567890123456789012345678901234567890123
+    </pre>
+    <div id="output"></div>
+
+    <div>
+        <label for="user-year">Enter a year:</label>
+        <input type="text" id="user-year" size="4" value="2024">
+    </div>
+    <div>
+        <label for="user-month">Enter a month (1-12):</label>
+        <input type="text" id="user-month" size="2" value="1">
+    </div>
+    <div>
+        <label for="user-day">Enter a day (1-31):</label>
+        <input type="text" id="user-day" size="2" value="1">
+    </div>
+    <div id="output"></div>
+
+    <label for="date-picker">Select your birth date:</label>
+<input type="date" id="date-picker" value="2000-01-01">
+ 
+<div id="output"></div>
+
+<script>
+    const myHeader = `
+    <nav class="banner">
+        <h3 class="nav-heading">Navigation</h3>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Away</li>
+            <li>In Between</li>
+     </ul>
+    </nav>`
+    const bookName = "Say waasaa wazzaa wazza woop voop Coops Soon";
+ 
+    let str = "\"C\" is at index " + bookName.indexOf("C") + "<br>";
+    str += "\"v\" is at index " + bookName.indexOf("v") + "<br>";
+    str += "The first space is at index " + bookName.indexOf(" ") + "<br>";
+    str += "The first \"S\" is at index " + bookName.indexOf("S") + "<br>";
+    str += "The last \"S\" is at index " + bookName.lastIndexOf("S") + "<br>";
+    str += "The first \"a\" after index 2 is at index " +  bookName.indexOf("a", 2) + "<br>";
+    str += "The substring \"Script\" begins at index " + bookName.indexOf("Script");
+    str += "slice(0, 4) = " + bookName.slice(0, 4) + "<br>";
+    str += "slice(6, 9) = " + bookName.slice(6, 9) + "<br>";
+    str += "slice(15) = " + bookName.slice(15) + "<br>";
+    str += "slice(0, -12) = " + bookName.slice(0, -12);
+    document.getElementById("output").innerHTML = str;
+    document.getElementById("output").innerHTML = str;
+
+    const timeNow = new Date();
+    const hoursNow = timeNow.getHours();
+    const minutesNow = timeNow.getMinutes();
+    let message = "It's ";
+    let hoursText;
+    
+    if (minutesNow <= 30) {
+        message += minutesNow + (minutesNow === 1 ? " minute past " : " minutes past ");
+        hoursText = hoursNow;
+    } else {
+        message += (60 - minutesNow) + ((60 - minutesNow) === 1 ? " minute before " : " minutes before ");
+        hoursText = hoursNow + 1;
+    }
+    
+    if (hoursNow == 0 && minutesNow <= 30) {
+        message += "midnight.";
+    } else if (hoursNow == 11 && minutesNow > 30) {
+        message += "noon.";
+    } else if (hoursNow < 12) {
+        message += hoursText + " in the morning.";
+    } else if (hoursNow == 12 && minutesNow <= 30) {
+        message += "noon.";
+    } else if (hoursNow < 18) {
+        message += parseInt(hoursText - 12) + " in the afternoon.";
+    } else if (hoursNow == 23 && minutesNow > 30) {
+        message += "midnight.";
+    } else {
+        message += parseInt(hoursText - 12) + " in the evening.";
+    }
+    document.getElementById("output").innerHTML = message;
+
+    // Get the inputs
+const inputs = document.querySelectorAll('input');
+ 
+ // Add a `change` event listener to each input
+ inputs.forEach( input => {
+     input.addEventListener('change', makeDate);
+ });
+  
+ // Run this function each time an input changes
+ function makeDate() {
+     
+     // Get the year, month (minus 1), and day
+     const userYear = document.querySelector('#user-year').value;
+     const userMonth = document.querySelector('#user-month').value - 1;
+     const userDay = document.querySelector('#user-day').value;
+     
+     // Create a new Date object
+     const userDate = new Date();
+     
+     // Set the year, month, and date
+     userDate.setFullYear(userYear);
+     userDate.setMonth(userMonth);
+     userDate.setDate(userDay);
+     
+     // Convert the date info to strings
+     const dateString = userDate.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' });
+     const dayName = userDate.toLocaleDateString('default', { weekday: 'long' });
+     
+     // Display the message
+     document.getElementById("output").innerHTML =
+         `The date entered is: ${dateString}
+         <br>The day of the week is: ${dayName}`;
+ }
+  
+ // Run the function as soon as the page loads
+ makeDate();
+
+    // Add a `change` event listener to the date picker
+const datePicker = document.querySelector('#date-picker');
+datePicker.addEventListener('change', calculateAge);
+ 
+// Run this function when the date changes
+function calculateAge() {
+    
+    // Create a new Date object from the date picker value
+    const birthDate = new Date(datePicker.value);
+    
+    // Store the user's birth year
+    const birthYear = birthDate.getFullYear();
+    
+    // Make a Date object and set it
+    // to the user's birthday this year
+    const birthdayDate = new Date();
+    birthdayDate.setMonth(birthDate.getMonth());
+    birthdayDate.setDate(birthDate.getDate());
+    
+    // Store the current date and current year
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    
+    // Calculate the user's age
+    let userAge = currentYear - birthYear;
+ 
+    // Has the birthday occurred yet this year?
+    if (currentDate < birthdayDate) {
+        // If not, adjust the age down by one year
+        userAge -= 1;
+    }
+    // Output the result
+    document.getElementById("output").innerHTML = `You are ${userAge} years old.`;
+}
+
+
+ 
+</script>
+
+    
+    
